@@ -24,6 +24,11 @@ function FilmList({ setFavoriteFilms, favoriteFilms, toast }) {
         event.preventDefault()
         setFavoriteFilms({ ...favoriteFilms, movies: [...favoriteFilms.movies, film] })
         toast.success("Adicionado com sucesso")
+        takeFilmOut(film)
+    }
+
+    function takeFilmOut(film) {
+        setData(data.filter((cE) => cE.id !== film.id))
     }
 
     return (

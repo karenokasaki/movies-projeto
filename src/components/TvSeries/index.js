@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { Divider, Card, Col, Row, Button } from 'antd'
+import { Card, Col, Row } from 'antd'
 
 
 function TvSeries() {

@@ -1,7 +1,7 @@
-import { useParams, Link, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Divider, Card, Col, Row, Space, Button, Form, Input } from 'antd'
+import { Divider, Col, Row, Button, Form, Input } from 'antd'
 import CardFilm from '../../components/Card';
 import { toast } from 'react-toastify';
 
@@ -10,7 +10,6 @@ import { toast } from 'react-toastify';
 function EditList() {
 
     const { TextArea } = Input;
-    const { Meta } = Card;
 
     const { id } = useParams()
 
@@ -23,7 +22,7 @@ function EditList() {
             setFilm(response.data)
         }
         fetchFilms()
-    }, [])
+    }, [id])
 
     function handleChange(event) {
         setFilm({ ...film, [event.target.name]: event.target.value })

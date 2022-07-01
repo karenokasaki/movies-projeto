@@ -1,7 +1,4 @@
-import FilmList from "../../components/FilmList";
 import Favorites from "../../components/Favorites";
-import Form from "../../components/Form";
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Button, Divider } from 'antd'
 import TvSeries from "../../components/TvSeries";

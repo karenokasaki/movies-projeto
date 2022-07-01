@@ -1,7 +1,7 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Divider, Card, Col, Row, Space, Button } from 'antd'
+import { Divider, Card, Col, Row, Button } from 'antd'
 import { toast } from 'react-toastify';
 
 
@@ -21,7 +21,7 @@ function FilmDetails() {
         }
 
         fetchFilms()
-    }, [])
+    }, [id])
     console.log(film)
 
     async function handleDelete(e) {

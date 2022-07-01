@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import { Divider, Card, Col, Row, Space, Button } from 'antd'
+import { Link } from 'react-router-dom'
+import { Card, Col, Row } from 'antd'
 
 
 
